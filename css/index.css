@@ -1,0 +1,35 @@
+/*============================================
+背景画像
+============================================*/
+.harukasumi {
+    /* 背景画像指定 */
+    background-image: url(../img/Harukasumi.jpg);
+    margin: 0 10vw 0 10vw ;
+  }
+
+ .TurBoxAC {
+    /* 背景画像指定 */
+    background-image: url(../img/TurboLogoBackground.gif);
+    margin: 0 10vw 0 10vw ;
+  }
+/*============================================
+見出し
+============================================*/
+/* TurBoロゴ */
+img#TurBoLogo{
+    width: 50%;
+    }
+  div#logo{
+      /* logoのセンタリング */
+      text-align : center;
+      font-size: 4vw;
+      color: white;
+      padding: 35vh 0 50vh 0;
+  }
+/*============================================
+全般
+============================================*/
+  body {
+    color:#100167; 
+    }
+  

@@ -14,12 +14,9 @@
     <!--レスポンシブデザイン（PCとスマートフォンでの表示の切り替え）-->
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" id="style" href="css/base.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" id="style" href="/css/base.css">
 
-    <link rel="stylesheet"  href="css/index.css">
-    <link rel="stylesheet" id="index" href="css/index.css">
-    
     <script type="text/javascript">
         // iPhone iPad iPod Android の判別
         if (
@@ -27,8 +24,7 @@
           navigator.userAgent.indexOf('ipad') > -1 ||
           navigator.userAgent.indexOf('Android') > -1 )
         {
-          document.getElementById(`style`).setAttribute("href","css/base_mini.css")
-          document.getElementById(`index`).setAttribute("href","css/index_mini.css")
+          document.getElementById(`style`).setAttribute("href","/css/base_mini.css")
         } 
     </script>
 
@@ -45,38 +41,41 @@
     <!-- このdivでスクロールしない背景の設定 -->
     <div class="fixed-background TurBo">
         <div id="sidemenu"></div>
-        <!-- ロゴ -->
-        <div id="logo">
-            <a href="index.html">
-                <img id="TurBoLogo" src="img/TurBo logo.png" alt="TurBo">
-            </a>
-            <p>Official Web Site</p>
-        </div>
-    </div>
-    <div class="background">
-
-        <h1>News</h1>
-    </div>
-    <a href="img/404.png">
-        <div class="fixed-background harukasumi">
-            <div class="center">
-                <h2>春霞 動画公開</h2>
-                <p>春霞の動画を作成しました。ぜひご覧ください。</p>
-            </div>
-        </div>
-    </a>
-    <a href="img/404.png">
-        <div class="fixed-background TurBoxAC" style="color: white;">
-            <div class="center">
-                <h2>TurBo × AssettoCorsa 動画公開</h2>
-            </div>
-        </div>
-    </a>
-    <div id="footer"></div>
+            <div id="logo"> </div>
+            
+            <h2>車好きによる二人組の音楽グループ</h2>
+            <p>読み方は「トゥルポ」</p>
+    
+            <p>卒業制作の音楽の作成から、音楽活動を始めた二人組のチーム。<br/>
+                ピアノやバンドサウンド中心に、幻想的なサウンドを目指して
+                楽曲作成を行う。</p>
+    
+            <h2>メンバー</h2>
+            <h3>daias</h3>
+            
+            <p>現在作曲担当。<br/>
+                音楽作るのに全くの楽器初心者です...<br/>
+                ギター練習中。<br/>
+                好きな車はNissan 180SX(RPS13)</p>
+            <h3>T.O.</h3>
+            <p>現在編曲・曲構成担当。<br/>
+                
+                好きな車はSubaru Imprezza 22B STi Version(GC8)</p>
+    
+            <h2>Guest</h2>
+            <h3>H.M.</h3>
+            <P>楽曲 「春霞」のジャケットイラストを描いてくださいました。</P>
+            <img src="../img/Harukasumi.jpg" 
+                style="width: 16vw;
+                        margin: 0 42vw;">
+    
+            <div id="footer"></div>
+    </div> 
     <script>
         //共通パーツ読み込み
         $(function () {
             $("#sidemenu").load("html/sidemenu.html");
+            $("#logo").load("html/logo.html");
             $("#footer").load("html/footer.html");
         });
     </script>

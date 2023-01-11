@@ -9,3 +9,11 @@ img#TurBoLogo{
   div#logo{
       padding: 40vh 0 50vh 0;
   }
+
+  /*============================================
+背景
+============================================*/
+/* スクロールしない */
+.fixed-background {
+    background-attachment: scroll;
+  }

@@ -17,9 +17,7 @@
     <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" id="style" href="/css/base.css">
 
-    <link rel="stylesheet" href="/css/songPage.css">
-    <link rel="stylesheet" id="songPage_style" href="/css/songPage.css">
-
+    <link rel="stylesheet" href="/css/media.css">
     <script type="text/javascript">
         // iPhone iPad iPod Android の判別
         if (
@@ -28,11 +26,9 @@
           navigator.userAgent.indexOf('Android') > -1 )
         {
           document.getElementById(`style`).setAttribute("href","/css/base_mini.css")
-          document.getElementById(`songPage_style`).setAttribute("href","/css/songPage_mini.css")
         } 
     </script>
 
-    
     <!-- jqueryの導入 -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="js/scroll.js"></script>
@@ -40,26 +36,41 @@
     <!-- <link rel="stylesheet" media="screen and (min-width:800px)" href="css/base.css"> -->
     <!-- <link rel="stylesheet" media="screen and (max-width:800px)" href="css/base_mini.css"> -->
 
-    <title>TurBo - Harukasumi</title>
+    <title>TurBo - Home</title>
 </head>
 <body>
     <!-- このdivでスクロールしない背景の設定 -->
     <div class="fixed-background TurBo">
         <div id="sidemenu"></div>
             <div id="logo"> </div>
-            <div class="movietitle">
-                <h2>春霞</h2>
-                <p class="furigana">ハルカスミ</p>
-            </div>
-                <div class="movie">
-                    <iframe width="560" height="315" 
-                    src="https://www.youtube.com/embed/pk5lR4TQhGs" 
-                    title="YouTube video player" frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen></iframe>
-                </div> 
-            <p>Music by : daias / Arranged by : T.O. / Illustration by : H.M.</p>
-            <div class="margin"></div>
+
+            <h2>Media</h2>
+            <a  href="">
+                <div class="media">
+                    <p>▶︎YouTube</p>
+                </div>
+            </a>
+
+            <a  href="">
+                <div class="media">
+                    <p>▶︎niconico</p>
+                </div>
+            </a>
+
+            <a  href="">
+                <div class="media">
+                    <p>▶︎Twitter</p>
+                </div>
+            </a>
+            
+        
+            <h2>Contact</h2>
+            <a  href="">
+                <div class="media">
+                    <p>▶︎Mail</p>  
+                </div>
+            </a>
+          
             <div id="footer"></div>
     </div> 
     <script>

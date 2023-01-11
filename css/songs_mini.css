@@ -1,0 +1,9 @@
+@charset "utf-8";
+.jacket{
+    text-align: center;
+}
+
+.jacket a img{
+    width: 60vw;
+    height: 60vw;
+}

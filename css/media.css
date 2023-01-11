@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+/*============================================
+見出し
+============================================*/
+/* TurBoロゴ */
+img#TurBoLogo{
+  width: 300px;
+  }
+div#logo{
+    /* logoのセンタリング */
+    text-align : center;
+    color: white;
+    padding: 6vh 2vh 0vh 2vh;
+}
+
+
+h2 {
+    font-size: 30px;
+    color: #ffe07b;
+    margin: 6vh 20vw 6vh 20vw;
+    text-align: center;
+}
+p {
+    font-size: 20px;
+    margin: 4vh 20vw;
+    text-align: center;
+ }
+a {
+  text-decoration: none;
+  color: white;
+margin: 0;
+}
+
+.media {
+
+  margin: 0 auto;
+
+}
+.media:hover{
+  background-color: rgb(255, 23, 23);
+  -webkit-transition: .7s;
+}

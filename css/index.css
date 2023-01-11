@@ -4,13 +4,15 @@
 .harukasumi {
     /* 背景画像指定 */
     background-image: url(../img/Harukasumi.jpg);
-    margin: 0 10vw 0 10vw ;
+    margin: 0 20vw;
+    min-height: 50vh;
   }
 
  .TurBoxAC {
     /* 背景画像指定 */
     background-image: url(../img/TurboLogoBackground.gif);
-    margin: 0 10vw 0 10vw ;
+    margin: 0 20vw;
+    min-height: 50vh;
   }
 /*============================================
 見出し

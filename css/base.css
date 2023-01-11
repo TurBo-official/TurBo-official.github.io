@@ -62,8 +62,13 @@ p {
     text-align: center;
  }
 a {
-  text-decoration: none; 
+  text-decoration: none;
+  color: white;
 }
+/* 
+a div:hover{
+  background-color: #ff6929;
+} */
 
 .center {
 
@@ -87,7 +92,7 @@ text-decoration: none;
 /* フッター */
 div#footer {
   text-align: center; 
-  padding: 20vh 0 4vh 0;
+  padding: 2vh 0 2vh 0;
 }
 
 /*============================================

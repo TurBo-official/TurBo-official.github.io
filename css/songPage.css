@@ -1,0 +1,22 @@
+@charset "utf-8";
+.movietitle {
+    margin-bottom: 2vw;
+}
+
+h2{
+    font-size: 36px;
+    margin: 0;
+}
+.furigana {
+    font-size: 24px;
+    margin: 0;
+}
+
+p {
+    font-size: 18px;
+    margin: 0;
+}
+
+.movie {
+    text-align: center;
+}

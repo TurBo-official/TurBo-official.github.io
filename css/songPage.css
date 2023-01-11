@@ -1,4 +1,6 @@
 @charset "utf-8";
+
+
 .movietitle {
     margin-bottom: 2vw;
 }
@@ -8,7 +10,7 @@ h2{
     margin: 0;
 }
 .furigana {
-    font-size: 24px;
+    font-size: 18px;
     margin: 0;
 }
 
@@ -17,11 +19,15 @@ p {
     margin: 0;
 }
 
-.movie {
-    text-align: center;
+iframe {
+    /* iframe中央寄せ */
+    display: block;
+    margin: 0 auto;
+
+    aspect-ratio: 16/9;
 }
 
-
-.margin {
-    margin: 8vh;
+.fixed-background {
+    height: 100vh;
 }
+

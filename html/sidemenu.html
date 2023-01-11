@@ -1,5 +1,21 @@
   <head>
     <script type="text/javascript" src="../js/sidemenu.js"></script>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/css/sidemenu.css">
+    <link rel="stylesheet" id="style" href="/css/sidemenu.css">
+
+    <script type="text/javascript">
+        // iPhone iPad iPod Android の判別
+        if (
+          navigator.userAgent.indexOf('iPhone') > -1 ||
+          navigator.userAgent.indexOf('ipad') > -1 ||
+          navigator.userAgent.indexOf('Android') > -1 )
+        {
+          document.getElementById(`style`).setAttribute("href","/css/sidemenu_mini.css")
+        } 
+    </script>
   </head>
   <!-- サイドメニュー -->
   <div class="sidebar">

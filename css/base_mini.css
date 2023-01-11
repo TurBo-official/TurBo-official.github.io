@@ -13,10 +13,10 @@
 
 /* TurBoロゴ */
 img#TurBoLogo{
-  width: 30%;
+  width: 180px;
   }
 div#logo{
-  padding: 10vh 0 0vh 0;
+  padding: 5vh 0 0vh 0;
 }
 
  /*============================================
@@ -31,27 +31,3 @@ div#footer {
   padding: 20vh 0 4vh 0;
 }
 
-/* サイドバーcss */
-.sidebar {
-  width: 50vw;
-  left: -50%;
-}
-
-#humIcon {
-  width: 100px;
-  height: 100px;
-}
-span {
-  width: 60px;
-  height: 5px;
-  left: 10px;
-}
-.bar1 {
-  top: 12.5px;
-}
-.bar2 {
-  top: 35px;
-}  
-.bar3 {
- top: 57.5px;
-}

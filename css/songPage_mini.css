@@ -1,5 +1,8 @@
 @charset "utf-8";
 iframe {
-    width: 95%;
-    height: auto;
+    width: 80%;
+}
+
+.fixed-background {
+    height: 100vh;
 }

@@ -36,3 +36,22 @@ div#footer {
   width: 50vw;
   left: -50%;
 }
+
+#humIcon {
+  width: 100px;
+  height: 100px;
+}
+span {
+  width: 60px;
+  height: 5px;
+  left: 10px;
+}
+.bar1 {
+  top: 12.5px;
+}
+.bar2 {
+  top: 35px;
+}  
+.bar3 {
+ top: 57.5px;
+}

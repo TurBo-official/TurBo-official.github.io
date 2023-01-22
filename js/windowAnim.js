@@ -1,3 +1,5 @@
+
+
 //scroll_effect
 $(window).ready(function () {
   var scrollAnimationElm = document.querySelectorAll('.scroll_up');
@@ -26,6 +28,7 @@ $(window).ready(function () {
       }
     }
   }
+  window.addEventListener('DOMContentLoaded', scrollAnimationFunc);
   window.addEventListener('load', scrollAnimationFunc);
   window.addEventListener('scroll', scrollAnimationFunc);
 });

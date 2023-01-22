@@ -2,42 +2,29 @@
 <html lang="ja">
 
 <head>
-    <!-- Google fontの導入 -->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
-    </style>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
-    <meta charset="UTF-8"><!--変換コード-->
-    <meta name="keywords" content="Turbo Music"><!--検索語句の指定-->
-    <meta name="theme-color" content="#100167"><!--ios status bar color-->
+    <div id="header"></div>
 
-    <!--レスポンシブデザイン（PCとスマートフォンでの表示の切り替え）-->
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    
+    <link rel="stylesheet"  href="css/windowAnim.css">
+    <script type="text/javascript" src="js/windowAnim.js"></script>
+
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" id="style" href="css/base.css">
-
     <link rel="stylesheet"  href="css/index.css">
     <link rel="stylesheet" id="index" href="css/index.css">
-    
     <script type="text/javascript">
-        // iPhone iPad iPod Android の判別
-        if (
-          navigator.userAgent.indexOf('iPhone') > -1 ||
-          navigator.userAgent.indexOf('ipad') > -1 ||
-          navigator.userAgent.indexOf('Android') > -1 )
-        {
-          document.getElementById(`style`).setAttribute("href","css/base_mini.css")
-          document.getElementById(`index`).setAttribute("href","css/index_mini.css")
-        } 
-    </script>
-
-    <!-- jqueryの導入 -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script type="text/javascript" src="js/scroll.js"></script>
-    
-    <!-- <link rel="stylesheet" media="screen and (min-width:800px)" href="css/base.css"> -->
-    <!-- <link rel="stylesheet" media="screen and (max-width:800px)" href="css/base_mini.css"> -->
+    // iPhone iPad Android 判別
+    if (
+        navigator.userAgent.indexOf('iPhone') > -1 ||
+        navigator.userAgent.indexOf('ipad') > -1 ||
+        navigator.userAgent.indexOf('Android') > -1 )
+    {
+        document.getElementById(`style`).setAttribute("href","css/base_mini.css")
+        document.getElementById(`index`).setAttribute("href","css/index_mini.css")
+    } 
+</script>
 
     <title>TurBo - Home</title>
 </head>
@@ -46,7 +33,7 @@
     <div class="fixed-background TurBo">
         <div id="sidemenu"></div>
         <!-- ロゴ -->
-        <div id="logo">
+        <div id="logo" class="scroll_up">
             <a href="index.html">
                 <img id="TurBoLogo" src="img/TurBo logo.png" alt="TurBo">
             </a>
@@ -55,13 +42,13 @@
     </div>
     <div class="background">
 
-        <h1>News</h1>
+        <h1  class="scroll_up">News</h1>
     </div>
     <a href="Harukasumi.html">
         <div class="fixed-background harukasumi">
             <div class="center">
-                <h2>春霞 動画公開</h2>
-                <p>春霞の動画を公開しました。<br/>
+                <h2  class="scroll_up">春霞 動画公開</h2>
+                <p  class="scroll_up">春霞の動画を公開しました。<br/>
                     ぜひご覧ください。</p>
             </div>
         </div>
@@ -69,7 +56,7 @@
     <a href="img/404.png">
         <div class="fixed-background TurBoxAC" style="color: white;">
             <div class="center">
-                <h2>TurBo × AssettoCorsa 動画公開</h2>
+                <h2  class="scroll_up">TurBo × AssettoCorsa 動画公開</h2>
             </div>
         </div>
     </a>
@@ -77,6 +64,7 @@
     <script>
         //共通パーツ読み込み
         $(function () {
+            $("#header").load("html/header.html");
             $("#sidemenu").load("html/sidemenu.html");
             $("#footer").load("html/footer.html");
         });

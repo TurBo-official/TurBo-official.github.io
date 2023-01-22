@@ -1,4 +1,6 @@
 @charset "utf-8";
+ /* Google fontの導入  */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
 /*============================================
 背景画像
 ============================================*/
@@ -97,6 +99,7 @@ div#footer {
   vertical-align: bottom;
 }
 
+
 /*============================================
 メニュー
 ============================================*/
@@ -108,6 +111,7 @@ div#footer {
     position: relative;
     box-sizing: border-box;
     position: fixed;
+    z-index: 1; /*重なりを上側に指定 */
   }
   span {
     display: block;
@@ -160,6 +164,7 @@ div#footer {
     display: flex;
     -webkit-box-pack: center;
     justify-content: center;
+    z-index: 1; /*重なりを上側に指定 */
   }
   
   .sidebar.open {
@@ -203,4 +208,5 @@ div#footer {
   outline: none;
   box-shadow: 0 0 0 4px #cbd6ee;
   }
+
 

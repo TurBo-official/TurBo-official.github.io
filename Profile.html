@@ -2,20 +2,15 @@
 <html lang="ja">
 
 <head>
-    <!-- Google fontの導入 -->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
-    </style>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <div id="header"></div>
 
-    <meta charset="UTF-8"><!--変換コード-->
-    <meta name="keywords" content="Turbo Music"><!--検索語句の指定-->
-    <meta name="theme-color" content="#100167"><!--ios status bar color-->
+    <link rel="stylesheet"  href="css/windowAnim.css">
+    <script type="text/javascript" src="js/windowAnim.js"></script>
 
-    <!--レスポンシブデザイン（PCとスマートフォンでの表示の切り替え）-->
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    
-    <link rel="stylesheet" href="/css/base.css">
-    <link rel="stylesheet" id="style" href="/css/base.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" id="style" href="css/base.css">
 
     <script type="text/javascript">
         // iPhone iPad iPod Android の判別
@@ -24,16 +19,12 @@
           navigator.userAgent.indexOf('ipad') > -1 ||
           navigator.userAgent.indexOf('Android') > -1 )
         {
-          document.getElementById(`style`).setAttribute("href","/css/base_mini.css")
+          document.getElementById(`style`).setAttribute("href","css/base_mini.css")
         } 
     </script>
-
-    <!-- jqueryの導入 -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script type="text/javascript" src="js/scroll.js"></script>
     
-    <!-- <link rel="stylesheet" media="screen and (min-width:800px)" href="css/base.css"> -->
-    <!-- <link rel="stylesheet" media="screen and (max-width:800px)" href="css/base_mini.css"> -->
+    <link rel="stylesheet" href="css/profile.css">
+
 
     <title>TurBo - Profile</title>
 </head>
@@ -41,31 +32,32 @@
     <!-- このdivでスクロールしない背景の設定 -->
     <div class="fixed-background TurBo">
         <div id="sidemenu"></div>
-            <div id="logo"> </div>
+
+            <div id="logo" class="scroll_up"> </div>
             
-            <h2>車好きによる二人組の音楽グループ</h2>
-            <p>読み方は「トゥルボ」</p>
+            <h2 class="scroll_up">車好きによる二人組の音楽グループ</h2>
+            <p class="scroll_up">読み方は「トゥルボ」</p>
     
-            <p>卒業制作の音楽の作成から、音楽活動を始めた二人組のチーム。<br/>
+            <p class="scroll_up">卒業制作の音楽の作成から、音楽活動を始めた二人組のチーム。<br/>
                 ピアノやバンドサウンド中心に、幻想的なサウンドを目指して
                 楽曲作成を行う。</p>
     
-            <h2>メンバー</h2>
-            <h3>daias</h3>
+            <h2 class="scroll_up">メンバー</h2>
+            <h3 class="scroll_up">daias</h3>
             
-            <p>現在作曲担当。<br/>
+            <p class="scroll_up">現在作曲担当。<br/>
                 音楽作るのに全くの楽器初心者です...<br/>
                 ギター練習中。<br/>
                 好きな車はNissan 180SX(RPS13)</p>
-            <h3>T.O.</h3>
-            <p>現在編曲・曲構成担当。<br/>
+            <h3 class="scroll_up">T.O.</h3>
+            <p class="scroll_up">現在編曲・曲構成担当。<br/>
                 
                 好きな車はSubaru Imprezza 22B STi Version(GC8)</p>
     
-            <h2>Guest</h2>
-            <h3>H.M.</h3>
-            <P>楽曲 「春霞」のジャケットイラストを描いてくださいました。</P>
-            <a href="Harukasumi.html">
+            <h2 class="scroll_up">Guest</h2>
+            <h3 class="scroll_up">H.M.</h3>
+            <P class="scroll_up">楽曲 「春霞」のジャケットイラストを描いてくださいました。</P>
+            <a  class="scroll_up" href="Harukasumi.html">
                 <img src="../img/Harukasumi.jpg" 
                     style="width: 16vw;
                             display: block;
@@ -76,6 +68,7 @@
     <script>
         //共通パーツ読み込み
         $(function () {
+            $("#header").load("html/header.html");
             $("#sidemenu").load("html/sidemenu.html");
             $("#logo").load("html/logo.html");
             $("#footer").load("html/footer.html");

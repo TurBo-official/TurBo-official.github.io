@@ -75,3 +75,7 @@ transform: rotate(-225deg);
 top: 35px;
 transform: rotate(-315deg);
 }
+  /* サイドバーcss */
+  .sidebar {
+    width: 50vw;
+  }

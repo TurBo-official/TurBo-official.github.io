@@ -17,3 +17,42 @@ scroll_up ｜下から上へ出現
     opacity: 1.0;}
 }
 
+  /*----------------------------
+  scroll_right ｜右から出現
+  ----------------------------*/
+
+  .scroll_right_onload {
+    animation-name: scroll_right_Anim;
+    animation-duration: 1s;
+   animation-fill-mode:both; /* アニメの実行前後に、keyframesの0%と100%に指定したスタイルを適用するか。 */
+
+  }
+
+  @keyframes scroll_right_Anim{
+    0%{
+      -webkit-transition: 0.8s ease-in-out;
+      -moz-transition: 0.8s ease-in-out;
+      -o-transition: 0.8s ease-in-out;
+      transition: 0.8s ease-in-out;
+      transform: translateX(30px);
+      opacity: 0;
+      filter: alpha(opacity=0);
+      -moz-opacity: 0;}
+
+    100%{
+      opacity: 1.0;
+      filter: alpha(opacity=100);
+      -moz-opacity: 1.0;
+      transform: translateX(0);}
+}
+
+
+/*----------------------------
+タイミングをずらす
+----------------------------*/
+
+.timing_02 {animation-delay: .2s;}
+.timing_03 {animation-delay: .4s;}
+.timing_04 {animation-delay: .6s;}
+.timing_05 {animation-delay: .8s;}
+

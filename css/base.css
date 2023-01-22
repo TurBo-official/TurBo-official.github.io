@@ -112,25 +112,25 @@ div#footer {
   span {
     display: block;
     width: 60px;
-    height: 5px;
-    left: 10px;
+    height: 2px;
+    left: 20px;
     background: rgb(229, 229, 229);
     position: absolute;
     transition: all 0.5s ease;
   }
   .bar1 {
-    top: 12.5px;
+    top: 22.5px;
   }
   .bar2 {
-    top: 35px;
+    top: 45px;
   }  
   .bar3 {
-   top: 57.5px;
+   top: 67.5px;
   }
   /* jsによる.open属性の付与のスタイル */
   /*上の線225℃回転*/
   .bar1.open {
-  top: 35px;
+  top: 45px;
   transform: rotate(-225deg);
   }
   /*真ん中の線は透明化,回転*/
@@ -140,7 +140,7 @@ div#footer {
   }
   /*下の線-315℃回転*/
   .bar3.open {
-  top: 35px;
+  top: 45px;
   transform: rotate(-315deg);
   }
   

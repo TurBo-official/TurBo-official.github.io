@@ -78,4 +78,5 @@ transform: rotate(-315deg);
   /* サイドバーcss */
   .sidebar {
     width: 50vw;
+    left: -50%;
   }

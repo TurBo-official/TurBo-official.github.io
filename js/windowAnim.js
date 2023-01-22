@@ -12,6 +12,7 @@ $(window).ready(function () {
       }
     }
   }
+  window.addEventListener('DOMContentLoaded', scrollAnimationFunc);
   window.addEventListener('load', scrollAnimationFunc);
   window.addEventListener('scroll', scrollAnimationFunc);
 });
@@ -31,4 +32,5 @@ $(window).ready(function () {
   window.addEventListener('DOMContentLoaded', scrollAnimationFunc);
   window.addEventListener('load', scrollAnimationFunc);
   window.addEventListener('scroll', scrollAnimationFunc);
+
 });

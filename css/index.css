@@ -6,6 +6,7 @@
     background-image: url(../img/Harukasumi.jpg);
     margin: 0 20vw;
     min-height: 50vh;
+    color: #100167;
   }
 
  .TurBoxAC {
@@ -22,7 +23,7 @@ img#TurBoLogo{
     width: 50%;
     }
   div#logo{
-      /* logoのセンタリング */
+      /* logo　中央寄せ */
       text-align : center;
       font-size: 4vw;
       color: white;

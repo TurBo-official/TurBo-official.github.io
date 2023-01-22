@@ -33,27 +33,45 @@ div#footer {
 }
 
 
-/* サイドバーcss */
-.sidebar {
-  width: 50vw;
-  left: -50%;
-}
-
+/* ハンバーガーメニューCSS */
 #humIcon {
   width: 100px;
   height: 100px;
+  position: relative;
+  box-sizing: border-box;
+  position: fixed;
 }
 span {
-  width: 60px;
-  height: 5px;
-  left: 10px;
+  display: block;
+  width: 50px;
+  height: 2px;
+  left: 20px;
+  background: rgb(229, 229, 229);
+  position: absolute;
+  transition: all 0.5s ease;
 }
 .bar1 {
-  top: 12.5px;
+  top: 17.5px;
 }
 .bar2 {
   top: 35px;
 }  
 .bar3 {
- top: 57.5px;
+ top: 52.5px;
+}
+/* jsによる.open属性の付与のスタイル */
+/*上の線225℃回転*/
+.bar1.open {
+top: 35px;
+transform: rotate(-225deg);
+}
+/*真ん中の線は透明化,回転*/
+.bar2.open { 
+  opacity: 0;
+  transform: rotate(-225deg);
+}
+/*下の線-315℃回転*/
+.bar3.open {
+top: 35px;
+transform: rotate(-315deg);
 }

@@ -2,19 +2,10 @@
 
 //scroll_effect
 $(window).ready(function () {
-  var scrollAnimationElm = document.querySelectorAll('.scroll_up');
-  var scrollAnimationFunc = function () {
+  var scrollAnimationElm = document.querySelectorAll('.scroll_up_onload');
 
-    for (var i = 0; i < scrollAnimationElm.length; i++) {
-      var triggerMargin = 100;
-      if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + triggerMargin) {
-        scrollAnimationElm[i].classList.add('on');
-      }
-    }
-  }
-  window.addEventListener('DOMContentLoaded', scrollAnimationFunc);
-  window.addEventListener('load', scrollAnimationFunc);
-  window.addEventListener('scroll', scrollAnimationFunc);
+  scrollAnimationElm[i].classList.add('on');
+
 });
 
 //scroll_effect

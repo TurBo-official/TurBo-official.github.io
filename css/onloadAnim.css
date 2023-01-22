@@ -1,16 +1,21 @@
 /*----------------------------
 scroll_up ｜下から上へ出現
 ----------------------------*/
-.scroll_up {
-    transition: 0.8s ease-in-out;
-    transform: translateY(30px);
-    opacity: 0;
-  }
-  .scroll_up.on {
-    transform: translateY(0);
-    opacity: 1.0;
+.scroll_up_onload {
+    animation-name: scroll_up_Anim;
+    animation-duration: 1s;
   }
 
+  @keyframes scroll_up_Anim{
+    0%{
+    /* transition: 0.8s ease-in-out; */
+    transform: translateY(30px);
+    opacity: 0;}
+
+    100%{
+    transform: translateY(0);
+    opacity: 1.0;}
+}
   
   /*----------------------------
   scroll_left ｜左から出現
